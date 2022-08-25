@@ -1,0 +1,27 @@
+.list1 {
+    list-style: square;
+    background-color: bisque;
+    border-radius: 10px;
+    border-style: double;
+    border-color: red;
+}
+
+.list2 {
+    list-style: none;
+    list-style-image: url(../image/exit.png);
+}
+
+.in {
+    background-color: orange;
+    list-style-position: inside;
+}
+
+.out {
+    background-color: orange;
+    list-style-position: outside;
+}
+
+img {
+    padding: 10px;
+    border-color: brown;
+}

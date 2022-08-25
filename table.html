@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <Table></Table>
+    </title>
+    <style>
+        .div2 {
+            border: 1px solid red;
+            width: 200px;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+
+        .div1 {
+            border: 1px solid gray;
+            width: 200px;
+            line-height: 100px;
+        }
+
+        .tb1 {
+            width: 600px;
+            border: 3px solid blue;
+            border-collapse: collapse;
+        }
+
+        td,
+        th {
+            border: 2px solid gray;
+            text-align: center;
+        }
+
+        thead {
+            background-color: navy;
+            color: white;
+            text-transform: lowercase;
+        }
+
+        tbody {
+            background-color: rgb(213, 232, 233);
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: antiquewhite;
+        }
+
+        tbody tr:nth-child(2n+1) {
+            background-color: lightpink;
+        }
+
+        table :hover {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div1">字的高度</div>
+    <br>
+    <div class="div2">字的高度</div>
+
+    <table class="tb1">
+        <caption>表格元素與樣式</caption>
+        <thead>
+            <tr>
+                <th>product</th>
+                <th>product name</th>
+                <th>unit price</th>
+                <th>ID</th>
+            </tr>
+            <tr>
+                <th colspan="2">product</th>
+                <!-- <th>product name</th> -->
+                <th colspan="2">unit price</th>
+                <!-- <th>ID</th> -->
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td rowspan="3">9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <!-- <td>13</td> -->
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <!-- <td>13</td> -->
+                <td>14</td>
+                <td rowspan="4">15</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <!-- <td>15</td> -->
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <!-- <td>15</td> -->
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <!-- <td>15</td> -->
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+            </tr>
+        </tbody>
+
+    </table>
+</body>
+
+</html>
